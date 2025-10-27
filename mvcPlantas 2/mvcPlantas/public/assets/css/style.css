@@ -1,0 +1,103 @@
+/* ========================================
+   RESET E CONFIGURAÇÕES GLOBAIS
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* ========================================
+   CONTAINER PRINCIPAL
+======================================== */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 40px;
+}
+
+/* ========================================
+   TÍTULO
+======================================== */
+.home-title {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+}
+
+/* ========================================
+   BOTÕES DE NAVEGAÇÃO
+======================================== */
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.nav-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.nav-button:active {
+    transform: translateY(0);
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 24px;
+    }
+    
+    .nav-button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
